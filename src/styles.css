@@ -20,3 +20,15 @@
 .field-grid .readonly-input{background:#f6f4f8;color:#696278;cursor:default}
 .field-grid .email-helper{font-size:11px;color:#978fa2;font-weight:400;line-height:1.4}
 @media(max-width:600px){.detail-panel{padding:22px}.detail-meta{grid-template-columns:1fr}.detail-meta p{margin:6px 0}}
+
+/* UX improvements: budget, owned listings, inline validation */
+.budget-filters{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-top:18px;font-size:12px;color:#605775}
+.budget-filters>span{font-weight:700}.budget-filters label{display:flex;align-items:center;gap:6px}
+.budget-filters input{width:100px;padding:9px 10px;border:1px solid #e4dfeb;border-radius:9px;background:#fff;color:#3f3555}
+.mine-filter{padding:10px 16px;border:1px solid #dcd5e8;border-radius:100px;background:#fff;color:#665293;font-size:12px;font-weight:700}
+.mine-filter.on{background:#3d315b;color:#fff;border-color:#3d315b}
+.clear-budget{background:none;border:0;color:#665293;text-decoration:underline;font-size:12px}
+.owner-actions{display:flex;gap:8px;margin-top:9px}.owner-actions button{flex:1;border:1px solid #dcd5e8;border-radius:9px;background:#f2eefb;color:#665293;padding:9px;font-size:11px;font-weight:700}
+.field-grid .field-error{color:#a93232;font-size:11px;font-weight:500;line-height:1.4}
+.field-grid input[aria-invalid="true"],.field-grid select[aria-invalid="true"]{border-color:#c44444;outline:1px solid #c44444}
+@media(max-width:600px){.budget-filters>span{width:100%}}
